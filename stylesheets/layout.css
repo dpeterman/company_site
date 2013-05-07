@@ -1,0 +1,253 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+.left { float: left; }
+.right { float: right; }
+
+header {
+	padding-bottom: 30px;
+	background: url('../images/mochaGrunge.png');
+	border-bottom: 1px solid gray;
+}
+header .top {
+	margin-bottom: 20px;
+}
+#logo {
+	width: 50%;
+}
+#navigation {
+	margin-top: 60px;
+	width: 50%;
+}
+#navigation .nav-item-wrapper {
+	float: right;
+	text-align: center;
+}
+#navigation .nav-item {
+	margin-right: 2%;
+	padding: 10px 15px;
+	color: #41416B;
+	text-shadow: 1px 1px 1px #CCC;
+	font-family: 'BebasRegular';
+	font-size: 16px;
+	text-decoration: none;
+}
+#navigation .nav-item:hover {
+	background: #41416B;
+	color: gray;
+	text-shadow: -1px -1px 1px #222;
+}
+
+.banner {
+	position: absolute;
+	margin: -46px 10px 10px -20px;
+	padding: 6px 20px 6px 70px;
+	width: 50%;
+	background-color: #5A5C85;
+	color: #2C2C4A;
+	font-family: 'BebasRegular';
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px #9798BF;
+	-webkit-box-shadow: 0px 2px 4px #888;
+	-moz-box-shadow: 0px 2px 4px #888;
+	box-shadow: 0px 2px 4px #888;
+}
+.banner:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 100%;
+	border-width: 5px 10px;
+	border-style: solid;
+	border-color: #2C2C4A #2C2C4A transparent transparent;
+}
+.banner span {
+	position: absolute;
+	width: 0;
+	height: 0;
+	right: -2px;
+	top: 0px;
+	border-width: 24px 20px;
+	border-style: solid;
+	border-color: transparent #F5F5F5 transparent transparent;
+}
+
+footer {
+	padding: 40px;
+	background: url('../images/binding_dark.png');
+	font-family: BebasRegular;
+}
+footer p {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+footer .single-row {
+	margin-top: 15px;
+}
+footer .social-icons {
+	text-align: right;
+}
+footer .social-icons a {
+	margin-left: 10px;
+}
+
+/* #Page Styles
+================================================== */
+
+/* HOME */
+#image-container {
+	width: 930px;
+	height: 320px;
+	background: white;
+	border: 1px solid #333;
+}
+
+#main > div {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#info {
+	background: #F5F5F5;
+	border-top: 1px solid white;
+	border-bottom: 1px solid #CCC;
+}
+#info .columns {
+	margin-top: 50px;
+	margin-left: 46px;
+	position: relative;
+	border-left: 1px solid #C9C9C9;
+}
+#info .columns.right {
+	float: right;
+	margin-right: 30px;
+}
+#info p {
+	margin-left: 10px;
+	font-family: Arial;
+}
+
+#testimonials {
+	background: url('../images/textured_paper.png');
+	border-top: 1px solid #FFF;
+}
+#testimonials h3 {
+	margin: 0 0 50px 30px;
+	color: #555;
+	font-family: 'BebasRegular';
+	text-shadow: 1px 1px 1px #FFF;
+}
+#testimonials blockquote {
+	background: url('../images/quote.png') top left no-repeat;
+	font-family: Arial;
+}
+#testimonials cite {
+	margin: -15px 0 0 -30px;
+	color: #777;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#image-container {
+			width: 744px;
+			height: 256px;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#logo {
+			width: 100%;
+			text-align: center;
+		}
+		#navigation {
+			clear: left;
+			margin-bottom: 25px;
+			width: 100%;
+		}
+		#navigation .nav-item-wrapper {
+			width: 33%;
+		}
+		
+		#image-container {
+			width: 420px;
+			height: 144px;
+		}
+		
+		#info .columns {
+			margin-left: 20px;
+		}
+		
+		footer .social-icons {
+			text-align: left;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#image-container {
+			width: 298px;
+			height: 102px;
+		}
+		
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('../fonts/bebas_neue/BEBAS___-webfont.eot');
+    src: url('../fonts/bebas_neue/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebas_neue/BEBAS___-webfont.woff') format('woff'),
+         url('../fonts/bebas_neue/BEBAS___-webfont.ttf') format('truetype'),
+         url('../fonts/bebas_neue/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
